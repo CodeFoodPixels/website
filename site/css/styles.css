@@ -194,18 +194,6 @@ body {
     }
 }
 
-@media screen and (min-width: 1312px) {
-    .content {
-        width: 1280px;
-    }
-
-    .header__spaceship {
-        margin-left: -640px;
-    }
-
-
-}
-
 @font-face {
     font-family: 'press_start_2pregular';
     src: url('pressstart2p-webfont.woff2') format('woff2'),
