@@ -15,11 +15,20 @@ body {
     flex-direction: column;
 }
 
+.easter {
+    overflow: hidden;
+}
+
 .header {
     height: 200px;
     position: relative;
     background: url('../img/stars.png');
     animation: 3s linear infinite stars;
+    overflow: hidden;
+}
+
+.easter .header {
+    animation: none;
 }
 
 .header__spaceship {
@@ -30,6 +39,10 @@ body {
     margin-left: -68px;
 }
 
+.easter .header__spaceship {
+    animation: none;
+}
+
 .header__text {
     color: #FFFFFF;
     text-align: center;
@@ -38,6 +51,7 @@ body {
     bottom: 12px;
     left: 50%;
     margin-left: -160px;
+    user-select: none;
 }
 
 .header__name {
@@ -59,6 +73,10 @@ body {
     animation: 1.5s linear alternate infinite blink;
 }
 
+.easter .header__start-text {
+    animation: none;
+}
+
 .header__start-line {
     flex: 1;
     height: 2px;
@@ -72,6 +90,11 @@ body {
     padding: 4px;
     margin-bottom: 8px;
     flex-wrap: wrap;
+}
+
+.nav__content {
+    display: flex;
+    flex: 1;
 }
 
 .nav__item {
@@ -137,6 +160,34 @@ body {
     margin-bottom: 16px;
 }
 
+.easter__overlay {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    bottom: 0px;
+    right: 0px;
+    background: #000000;
+    opacity: 0.9;
+}
+
+.easter__close {
+    position: fixed;
+    top: 50%;
+    margin-top: -160px;
+    right:50%;
+    font-family: 'press_start_2pregular', monospace;
+    color: #ffffff;
+    border: none;
+    background: transparent;
+}
+
+.easter__canvas {
+    position: fixed;
+    top: 50%;
+    margin-top: -160px;
+    left: 50%;
+}
+
 @media screen and (min-width: 650px) {
     .header__text {
         margin-top: -47px;
@@ -191,6 +242,40 @@ body {
         margin: 0 auto 16px;
         width: 960px;
         border: none;
+    }
+}
+
+@media screen and (min-width: 1172px) {
+    .header__spaceship {
+        top: 66px;
+        left: 50%;
+        margin-left: -570px;
+    }
+
+    .content {
+        margin: 0 auto 16px;
+        width: 1140px;
+        border: none;
+    }
+}
+
+@media screen and (min-width: 1212px) {
+    .nav:before,
+    .nav:after {
+        content: '';
+        flex: 1;
+        height: 32px;
+        background: #bb1b1b;
+        margin: 4px;
+        border-top: 4px solid #e02929;
+        border-right: 4px solid #e02929;
+        border-bottom: 4px solid #8f1414;
+        border-left: 4px solid #8f1414;
+    }
+
+    .nav__content {
+        width: 1172px;
+        flex: none;
     }
 }
 
