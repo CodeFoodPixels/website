@@ -184,6 +184,10 @@ function loadGame() {
                 collisionCheck();
             }
             window.requestAnimationFrame(draw);
+        } else {
+            setTimeout(function() {
+                state.canRestart = true;
+            }, 250);
         }
     }
 
@@ -331,8 +335,10 @@ function loadGame() {
     }
 
     function restartGame() {
-        resetState();
-        draw();
+        if (state.canRestart) {
+            resetState();
+            draw();
+        }
     }
 
     function closeGame() {
