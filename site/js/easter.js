@@ -3,19 +3,6 @@ var startTimeout;
 var gameLoaded = false;
 
 document.querySelector('.js-start').addEventListener('click', function() {
-    if (startClicked === false) {
-        startClicked = true;
-
-        startTimeout = setTimeout(function() {
-            startClicked = false;
-        }, 500);
-
-        return;
-    }
-
-    clearTimeout(startTimeout);
-    startClicked = false;
-
     if (gameLoaded === false) {
         loadGame();
     }
