@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+</head>
+<body>
+    <header class="header">
+        <div class="header__spaceship">
+            <img src="img/spaceship.png" alt="spaceship, spaceship, SPACESHIP!" class="header__spaceship-image" />
+        </div>
+        <div class="header__text">
+            <div class="header__name">Luke <br>Bonaccorsi</div>
+            <div class="header__start js-start">Press Start</div>
+        </div>
+    </header>
+    <nav class="nav">
+        <div class="nav__content">
+            <input type="checkbox" id="show-menu" class="nav__toggle-checkbox" role="button">
+            <label for="show-menu" class="nav__item nav__toggle">Menu</label>
+            <div class="nav__item">Blog</div>
+            <div class="nav__item">About</div>
+            <div class="nav__item">Projects</div>
+            <div class="nav__item">GitHub</div>
+            <div class="nav__item">Twitter</div>
+        </div>
+    </nav>
+    <main class="content">
+        <article>
+            <header>
+                <h1>How I Ended Up Automating My Curtains And Shouting At My Laptop</h1>
+                <div class="content__meta">
+                    <time datetime="<%= date_xml(post.date) %>">22/05/1990</time>
+                </div>
+            </header>
+
+            <p>The path of the righteous man is beset on all sides by the iniquities of the selfish and the tyranny of evil men. Blessed is he who, in the name of charity and good will, shepherds the weak through the valley of darkness, for he is truly his brother's keeper and the finder of lost children. And I will strike down upon thee with great vengeance and furious anger those who would attempt to poison and destroy My brothers. And you will know My name is the Lord when I lay My vengeance upon thee. </p>
+
+        </article>
+        <article>
+            <header>
+                <h1>How I Ended Up Automating My Curtains And Shouting At My Laptop</h1>
+                <div class="content__meta">
+                    <time datetime="<%= date_xml(post.date) %>" itemprop="datePublished">22/05/1990</time>
+                </div>
+            </header>
+
+            <p>The path of the righteous man is beset on all sides by the iniquities of the selfish and the tyranny of evil men. Blessed
+                is he who, in the name of charity and good will, shepherds the weak through the valley of darkness, for he is truly
+                his brother's keeper and the finder of lost children. And I will strike down upon thee with great vengeance and furious
+                anger those who would attempt to poison and destroy My brothers. And you will know My name is the Lord when I lay
+                My vengeance upon thee. </p>
+
+        </article>
+    </main>
+    <footer class="footer">&copy; Luke Bonaccorsi 2017</footer>
+    <script type="text/javascript" src="js/easter.js"></script>
+</body>
+</html>
