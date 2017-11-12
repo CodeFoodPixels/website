@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            
+                Projects -
+            
+            Luke Bonaccorsi
+        </title>
+        <link rel="stylesheet" href="/css/styles.css" />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta charset="UTF-8">
+        <link rel="alternate" type="application/rss+xml" title="RSS Feed for lukeb.co.uk" href="/rss.xml" />
+    </head>
+
+    <body>
+        <header class="header">
+            <div class="header__spaceship">
+                <img src="/img/spaceship.png" alt="spaceship, spaceship, SPACESHIP!" class="header__spaceship-image" />
+            </div>
+            <div class="header__text">
+                <a href="/" class="header__name">Luke Bonaccorsi</a>
+                <div class="header__start js-start">Press Start</div>
+            </div>
+        </header>
+        <nav class="nav">
+            <div class="nav__content">
+                <input type="checkbox" id="show-menu" class="nav__toggle-checkbox" role="button">
+                <label for="show-menu" class="nav__item nav__toggle">Menu</label>
+                <a href="/" class="nav__item">Blog</a>
+                <a href="/about" class="nav__item">About</a>
+                <a href="/projects" class="nav__item">Projects</a>
+                <a href="https://github.com/lukeb-uk" class="nav__item">GitHub</a>
+                <a href="https://twitter.com/LukeB_UK" class="nav__item">Twitter</a>
+                <a href="/rss.xml" class="nav__item">RSS</a>
+            </div>
+        </nav>
+        <main class="content">
+            <header class="content__header">
+    <h1>Projects</h1>
+</header>
+<p>Outside of work I have a number of open source projects that I maintain and develop.</p>
+<h2 id="promise-mysql"><a href="#promise-mysql" class="headerlink" title="promise-mysql"></a>promise-mysql</h2><p><a href="https://github.com/lukeb-uk/node-promise-mysql" target="_blank" rel="external">promise-mysql</a> is a Node module that wraps the mysql Node module in promises. This means that you can use promise chains or async/await instead of callbacks.</p>
+<h2 id="tapshot"><a href="#tapshot" class="headerlink" title="tapshot"></a>tapshot</h2><p><a href="https://github.com/lukeb-uk/tapshot" target="_blank" rel="external">tapshot</a> is a Node module that helps with snapshot testing when you are using tools like <a href="https://www.npmjs.com/package/tap" target="_blank" rel="external">tap</a> and <a href="https://www.npmjs.com/package/tape" target="_blank" rel="external">tape</a>. Tapshot can be used to test any serializable object. It was inspired by <a href="https://facebook.github.io/jest/docs/en/snapshot-testing.html" target="_blank" rel="external">Jest’s snapshot testing</a>.</p>
+<p>This was an interesting project to work on as I had to ensure that it was well tested and worked exactly how it should.</p>
+<h2 id="jscad-includify"><a href="#jscad-includify" class="headerlink" title="jscad-includify"></a>jscad-includify</h2><p><a href="https://github.com/lukeb-uk/jscad-includify" target="_blank" rel="external">jscad-includify</a> is a Node module that builds the includes for a <a href="https://openjscad.org/" target="_blank" rel="external">JSCAD</a> project into one file. This is useful when you want to distribute a utility library or when you want to release a project as a single file.</p>
+<p>It can be used as a CLI tool or can be used as a module within a Node script.</p>
+<p>I enjoyed working on this project as it was my first try at building something using an AST.</p>
+<h2 id="Woodhouse"><a href="#Woodhouse" class="headerlink" title="Woodhouse"></a>Woodhouse</h2><p><a href="https://github.com/Woodhouse" target="_blank" rel="external">Woodhouse</a> is a modular chatbot written in JavaScript, running on Node.js. It is designed to be able to connect to multiple different interfaces (usually chat systems) and functionality is added through plugins.</p>
+<p>I use this in my house to <a href="https://www.youtube.com/watch?v=5YNmMdTzfaQ" target="_blank" rel="external">control my lamps</a> and give me reminders. I have <a href="https://www.youtube.com/watch?v=Crudcsaheoc" target="_blank" rel="external">automated my curtains</a> using this system (but don’t currently have that running) and have also added <a href="https://www.youtube.com/watch?v=CQzn16TzZ0w" target="_blank" rel="external">voice control</a>.</p>
+<p>In the future I hope to add more pieces of automation using Woodhouse, as well as generally learning more about virtual assistants.</p>
+
+
+        </main>
+        <footer class="footer">&copy; Luke Bonaccorsi 2017</footer>
+        <script type="text/javascript" src="/js/easter.js"></script>
+    </body>
+</html>
