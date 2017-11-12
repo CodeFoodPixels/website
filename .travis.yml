@@ -1,0 +1,13 @@
+language: generic
+sudo: false
+branches:
+  only:
+  - master
+before_script:
+  - >
+    curl -X DELETE \
+         -H "X-Auth-Email: $CLOUDFLARE_EMAIL" \
+         -H "X-Auth-Key: $CLOUDFLARE_TOKEN" \
+         -H "Content-Type: application/json" \
+         --data '{"purge_everything":true}' \
+         https://api.cloudflare.com/client/v4/zones/$CLOUDFLARE_ZONE/purge_cache
