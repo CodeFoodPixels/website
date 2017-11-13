@@ -1,36 +1,30 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom">
-  <title>Luke Bonaccorsi</title>
-  
-  
-  <link href="/rss.xml" rel="self"/>
-  
-  <link href="https://lukeb.co.uk/"/>
-  <updated>2017-11-13T14:26:40.966Z</updated>
-  <id>https://lukeb.co.uk/</id>
-  
-  <author>
-    <name>Luke Bonaccorsi</name>
+<rss version="2.0"
+  xmlns:atom="http://www.w3.org/2005/Atom"
+  xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Luke Bonaccorsi</title>
+    <link>https://lukeb.co.uk/</link>
+    <atom:link href="/rss.xml" rel="self" type="application/rss+xml"/>
     
-  </author>
-  
-  <generator uri="http://hexo.io/">Hexo</generator>
-  
-  <entry>
-    <title>New Website!</title>
-    <link href="https://lukeb.co.uk/2017/11/12/New-Website/"/>
-    <id>https://lukeb.co.uk/2017/11/12/New-Website/</id>
-    <published>2017-11-12T18:31:44.000Z</published>
-    <updated>2017-11-13T14:26:40.966Z</updated>
+    <description></description>
+    <pubDate>Mon, 13 Nov 2017 21:38:20 GMT</pubDate>
+    <generator>http://hexo.io/</generator>
     
-    <summary type="html">
-    
-      &lt;p&gt;My previous site hadn’t been touched since late 2014 and was running using a custon PHP system I’d written that took markdown and produced the page. This was happening every time someone hit the page so was pretty inefficient.&lt;/p&gt;
+    <item>
+      <title>New Website!</title>
+      <link>https://lukeb.co.uk/2017/11/12/New-Website/</link>
+      <guid>https://lukeb.co.uk/2017/11/12/New-Website/</guid>
+      <pubDate>Sun, 12 Nov 2017 18:31:44 GMT</pubDate>
+      <description>
+      
+        &lt;p&gt;My previous site hadn’t been touched since late 2014 and was running using a custon PHP system I’d written that took markdown and produced the page. This was happening every time someone hit the page so was pretty inefficient.&lt;/p&gt;
 &lt;p&gt;As my focus is no longer on PHP, I wanted to move towards something JavaScript based. I didn’t want to use a client side framework to do this, as the content is pretty static and I feel it would be needless to require JavaScript to present static content.&lt;/p&gt;
+      
+      </description>
+      
+      <comments>https://lukeb.co.uk/2017/11/12/New-Website/#disqus_thread</comments>
+    </item>
     
-    </summary>
-    
-    
-  </entry>
-  
-</feed>
+  </channel>
+</rss>
