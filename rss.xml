@@ -8,7 +8,7 @@
     <atom:link href="/rss.xml" rel="self" type="application/rss+xml"/>
     
     <description></description>
-    <pubDate>Mon, 13 Nov 2017 21:45:13 GMT</pubDate>
+    <pubDate>Wed, 15 Nov 2017 22:11:53 GMT</pubDate>
     <generator>http://hexo.io/</generator>
     
     <item>
@@ -18,7 +18,7 @@
       <pubDate>Sun, 12 Nov 2017 18:31:44 GMT</pubDate>
       <description>
       
-        &lt;p&gt;My previous site hadn’t been touched since late 2014 and was running using a custon PHP system I’d written that took markdown and produced the page. This was happening every time someone hit the page so was pretty inefficient.&lt;/p&gt;
+        &lt;p&gt;My previous site hadn’t been touched since late 2014 and was running using a custom PHP system I’d written that took markdown and produced the page. This was happening every time someone hit the page so was pretty inefficient.&lt;/p&gt;
 &lt;p&gt;As my focus is no longer on PHP, I wanted to move towards something JavaScript based. I didn’t want to use a client side framework to do this, as the content is pretty static and I feel it would be needless to require JavaScript to present static content.&lt;/p&gt;
       
       </description>
