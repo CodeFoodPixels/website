@@ -3,6 +3,8 @@
     <head>
         <title>
             
+                Conditional Breakpoints -
+            
             Luke Bonaccorsi
         </title>
         <link rel="stylesheet" href="/css/styles.css" />
@@ -34,12 +36,11 @@
             </div>
         </nav>
         <main class="content">
-            
-    <article class="content__article">
+            <article class="content__article">
     <header class="content__header">
         <h1>
             
-                <a href="/2017/12/05/Conditional-Breakpoints/">Conditional Breakpoints</a>
+                Conditional Breakpoints
             
         </h1>
         <div class="content__meta">
@@ -47,12 +48,24 @@
         </div>
     </header>
     
-        
-            <p>A really useful feature that I often find myself using in Chrome DevTools is conditional breakpoints. Conditional breakponts allow you to only pause execution when a certain expression evaluates to true, meaning that you can pause it when you want it to.</p>
-        
-        <p>
-            <a href="/2017/12/05/Conditional-Breakpoints/">Read More</a>
-        </p>
+        <p>A really useful feature that I often find myself using in Chrome DevTools is conditional breakpoints. Conditional breakponts allow you to only pause execution when a certain expression evaluates to true, meaning that you can pause it when you want it to.</p>
+<a id="more"></a>
+<h2 id="How-to-use-conditional-breakpoints"><a href="#How-to-use-conditional-breakpoints" class="headerlink" title="How to use conditional breakpoints"></a>How to use conditional breakpoints</h2><ol>
+<li><p>In the “Sources” panel in Chrome DevTools, open the JavaScript file that you want to debug.</p>
+</li>
+<li><p>Right click on the line number of the line you want to add the breakpoint to and select “Add conditional breakpoint”.</p>
+<p> <img src="breapoint-context-menu.png" alt="The breakpoint context menu. Add conditional breakpoint is the 3rd option"></p>
+</li>
+<li><p>Add your conditional statement into the text box. Your condition must be truthy when you want it to break. In my example I want it to break when there is more than one asteroid in the list.</p>
+<p> <img src="breakpoint-condition.png" alt="The breakpoint condition box"></p>
+</li>
+<li><p>When you run the code and the condition is met, the breakpoint will be fired and code execution will be paused!</p>
+<p> <img src="breakpoint-fired.png" alt="The breakpoint has fired as there are 2 items in the list"></p>
+</li>
+</ol>
+<p>Because the condition is executed each time that breakpoint is checked, you could even have it run other code. A great example would be when you’re trying to log out some input from a certain point in code, but can’t edit the source (e.g. when debugging built/live code).</p>
+<p><img src="breakpoint-console-log.png" alt="Using console.log within the expression to log out the length of the asteroid list"></p>
+
     
     <footer>
         
@@ -60,35 +73,6 @@
         
     </footer>
 </article>
-
-
-    <article class="content__article">
-    <header class="content__header">
-        <h1>
-            
-                <a href="/2017/11/12/New-Website/">New Website!</a>
-            
-        </h1>
-        <div class="content__meta">
-            <time datetime="2017-11-12T18:31:44.000Z">2017-11-12</time>
-        </div>
-    </header>
-    
-        
-            <p>My previous site hadn’t been touched since late 2014 and was running using a custom PHP system I’d written that took markdown and produced the page. This was happening every time someone hit the page so was pretty inefficient.</p>
-<p>As my focus is no longer on PHP, I wanted to move towards something JavaScript based. I didn’t want to use a client side framework to do this, as the content is pretty static and I feel it would be needless to require JavaScript to present static content.</p>
-        
-        <p>
-            <a href="/2017/11/12/New-Website/">Read More</a>
-        </p>
-    
-    <footer>
-        
-    </footer>
-</article>
-
-
-
 
 
         </main>
