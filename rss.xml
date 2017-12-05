@@ -8,13 +8,13 @@
     <atom:link href="/rss.xml" rel="self" type="application/rss+xml"/>
     
     <description></description>
-    <pubDate>Mon, 04 Dec 2017 23:29:23 GMT</pubDate>
+    <pubDate>Tue, 05 Dec 2017 10:28:31 GMT</pubDate>
     <generator>http://hexo.io/</generator>
     
     <item>
-      <title>Conditional Breakpoints</title>
-      <link>https://lukeb.co.uk/2017/12/05/Conditional-Breakpoints/</link>
-      <guid>https://lukeb.co.uk/2017/12/05/Conditional-Breakpoints/</guid>
+      <title>Conditional Breakpoints In Chrome DevTools</title>
+      <link>https://lukeb.co.uk/2017/12/05/Conditional-Breakpoints-Chrome-DevTools/</link>
+      <guid>https://lukeb.co.uk/2017/12/05/Conditional-Breakpoints-Chrome-DevTools/</guid>
       <pubDate>Tue, 05 Dec 2017 10:00:00 GMT</pubDate>
       <description>
       
@@ -22,7 +22,7 @@
       
       </description>
       
-      <comments>https://lukeb.co.uk/2017/12/05/Conditional-Breakpoints/#disqus_thread</comments>
+      <comments>https://lukeb.co.uk/2017/12/05/Conditional-Breakpoints-Chrome-DevTools/#disqus_thread</comments>
     </item>
     
     <item>
