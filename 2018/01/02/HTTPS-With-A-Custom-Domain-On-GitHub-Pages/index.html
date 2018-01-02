@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            
+                HTTPS With A Custom Domain On GitHub Pages -
+            
+            Luke Bonaccorsi
+        </title>
+        <link rel="stylesheet" href="/css/styles.css" />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta charset="UTF-8">
+        <meta name="description" content="While GitHub pages supports HTTPS for sites using the github.io domain, it doesn’t support it for custom domains. I’ve had a few people ask how I’ve achieved HTTPS with a custom domain on GitHub pages">
+<meta name="keywords" content="tips,GitHub pages,Cloudflare">
+<meta property="og:type" content="article">
+<meta property="og:title" content="HTTPS With A Custom Domain On GitHub Pages">
+<meta property="og:url" content="https://lukeb.co.uk/2018/01/02/HTTPS-With-A-Custom-Domain-On-GitHub-Pages/index.html">
+<meta property="og:site_name" content="Luke Bonaccorsi">
+<meta property="og:description" content="While GitHub pages supports HTTPS for sites using the github.io domain, it doesn’t support it for custom domains. I’ve had a few people ask how I’ve achieved HTTPS with a custom domain on GitHub pages">
+<meta property="og:updated_time" content="2018-01-02T00:25:05.958Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="HTTPS With A Custom Domain On GitHub Pages">
+<meta name="twitter:description" content="While GitHub pages supports HTTPS for sites using the github.io domain, it doesn’t support it for custom domains. I’ve had a few people ask how I’ve achieved HTTPS with a custom domain on GitHub pages">
+<meta name="twitter:creator" content="@LukeB_UK">
+        <link rel="alternate" type="application/rss+xml" title="RSS Feed for lukeb.co.uk" href="/rss.xml" />
+    </head>
+
+    <body>
+        <header class="header">
+            <div class="header__spaceship">
+                <a href="/">
+                    <img src="/img/spaceship.png" alt="spaceship, spaceship, SPACESHIP!" class="header__spaceship-image" />
+                </a>
+            </div>
+            <div class="header__text">
+                <a href="/" class="header__name">Luke Bonaccorsi</a>
+                <div class="header__start js-start">Press Start</div>
+            </div>
+        </header>
+        <nav class="nav">
+            <div class="nav__content">
+                <input type="checkbox" id="show-menu" class="nav__toggle-checkbox" role="button">
+                <label for="show-menu" class="nav__item nav__toggle">Menu</label>
+                <a href="/" class="nav__item">Blog</a>
+                <a href="/about" class="nav__item">About</a>
+                <a href="/projects" class="nav__item">Projects</a>
+                <a href="https://github.com/lukeb-uk" class="nav__item">GitHub</a>
+                <a href="https://twitter.com/LukeB_UK" class="nav__item">Twitter</a>
+                <a href="/rss.xml" class="nav__item">RSS</a>
+            </div>
+        </nav>
+        <main class="content">
+            <article class="content__article">
+    <header class="content__header">
+        <h1>
+            
+                HTTPS With A Custom Domain On GitHub Pages
+            
+        </h1>
+        <div class="content__meta">
+            <time datetime="2018-01-02T10:00:00.000Z">2018-01-02</time>
+        </div>
+    </header>
+    
+        <p>While GitHub pages supports HTTPS for sites using the github.io domain, it doesn’t support it for custom domains. I’ve had a few people ask how I’ve achieved HTTPS with a custom domain on GitHub pages, so I felt I should write a post on it.</p>
+<a id="more"></a>
+<h2 id="Setting-Up-GitHub-Pages"><a href="#Setting-Up-GitHub-Pages" class="headerlink" title="Setting Up GitHub Pages"></a>Setting Up GitHub Pages</h2><p>The first thing we have to do is configure the repo on GitHub.</p>
+<ol>
+<li><p>Open the “settings” page on your repo and scroll down to the “GitHub Pages” section</p>
+</li>
+<li><p>Select the source that your GitHub pages site will be built from. There are a few options here:</p>
+<ul>
+<li><p>gh-pages branch - This means you can use a separate branch on your project just for your documentation.</p>
+</li>
+<li><p>master branch - This means that the content of your master branch is used. I use this for this website.</p>
+</li>
+<li><p>master branch /docs folder - This uses the contents of a “docs” folder in the root of your master branch for the site content.</p>
+</li>
+<li><p>None - This disables GitHub pages for the repo.</p>
+</li>
+</ul>
+</li>
+<li><p>Set your custom domain in the “Custom domain” section</p>
+</li>
+</ol>
+<p><strong>Note:</strong> The “Enforce HTTPS” box gets disabled when you add a custom domain. This is fine as we’ll be enforcing HTTPS in the next section.</p>
+<h2 id="Adding-HTTPS-with-Cloudflare"><a href="#Adding-HTTPS-with-Cloudflare" class="headerlink" title="Adding HTTPS with Cloudflare"></a>Adding HTTPS with Cloudflare</h2><p>To add HTTPS to our GitHub pages custom domain we’ll be using the free tier of <a href="https://www.cloudflare.com" target="_blank" rel="external">Cloudfare</a>.</p>
+<h3 id="Adding-The-DNS-Records"><a href="#Adding-The-DNS-Records" class="headerlink" title="Adding The DNS Records"></a>Adding The DNS Records</h3><p>During the process of adding your site, you’ll be shown a list of DNS records for your domain. Alternatively you can go to the “DNS” section of the dashboard.</p>
+<p>You need to add <code>CNAME</code> record for <code>www</code> that redirects to your GitHub pages URL. For me that means I have it set to <code>lukeb-uk.github.io</code>. Make sure that the traffic is set to go through Cloudflare with the orange cloud.</p>
+<p>You could also add your root domain instead of <code>www</code> and this would mean it redirects to GitHub pages when you hit the root domain. This is how I have it set up.</p>
+<h3 id="Enabling-HTTPS"><a href="#Enabling-HTTPS" class="headerlink" title="Enabling HTTPS"></a>Enabling HTTPS</h3><p>On the dashboard, go to the “Crypto” section. In the SSL section you should select “Full” and <strong>not</strong> “Full (strict)”.</p>
+<p>Further down the page there’s a setting for “Always use HTTPS”. Set this to “On”. This means that any HTTP connections will get forced to HTTPS.</p>
+<p>You now have a site hosted on GitHub Pages that uses a custom domain and HTTPS!</p>
+<h2 id="Cloudflare-Caching"><a href="#Cloudflare-Caching" class="headerlink" title="Cloudflare Caching"></a>Cloudflare Caching</h2><p>Cloudflare also has a CDN (content delivery network) allowing optimised delivery of content to your visitors. By default HTML content isn’t cached, but you can add a page rule to do this.</p>
+<p>In the “Page Rules” section of the dashboard, create a page rule. In the URL box, put your domain followed by an asterisk. For me that would be <code>https://lukeb.co.uk/*</code>. Then in the settings section, select “Cache Level” from the drop down and then set the cache level to “Cache Everything”. Save and deploy this rule.</p>
+<p>You can also enable Cloudflare’s Always Online™ feature that will serve your site’s static pages from their cache if GitHub has an outage. You can enable this in the “Caching” section of the dashboard.</p>
+
+    
+    <footer>
+        
+            <a class="tag-link" href="/tags/Cloudflare/">#Cloudflare</a>, <a class="tag-link" href="/tags/GitHub-pages/">#GitHub pages</a>, <a class="tag-link" href="/tags/tips/">#tips</a>
+        
+    </footer>
+</article>
+
+
+        </main>
+        <footer class="footer">&copy; Luke Bonaccorsi 2017</footer>
+        <script async type="text/javascript" src="/js/easter.js"></script>
+    </body>
+</html>
