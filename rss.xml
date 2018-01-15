@@ -8,8 +8,22 @@
     <atom:link href="/rss.xml" rel="self" type="application/rss+xml"/>
     
     <description></description>
-    <pubDate>Tue, 02 Jan 2018 00:13:10 GMT</pubDate>
+    <pubDate>Mon, 15 Jan 2018 22:24:12 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>Learning About Burnout By Crashing My Car</title>
+      <link>https://lukeb.co.uk/2018/01/15/Learning-About-Burnout-By-Crashing-My-Car/</link>
+      <guid>https://lukeb.co.uk/2018/01/15/Learning-About-Burnout-By-Crashing-My-Car/</guid>
+      <pubDate>Mon, 15 Jan 2018 22:25:00 GMT</pubDate>
+      <description>
+      
+        &lt;p&gt;Today marks 4 years since I crashed and wrote off my car while driving to work one morning due to being burnt out. At the time I didn’t really realise I was burnt out or even what burnout was.&lt;/p&gt;
+      
+      </description>
+      
+      <comments>https://lukeb.co.uk/2018/01/15/Learning-About-Burnout-By-Crashing-My-Car/#disqus_thread</comments>
+    </item>
     
     <item>
       <title>HTTPS With A Custom Domain On GitHub Pages</title>
