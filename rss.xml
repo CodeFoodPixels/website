@@ -8,8 +8,22 @@
     <atom:link href="/rss.xml" rel="self" type="application/rss+xml"/>
     
     <description></description>
-    <pubDate>Mon, 15 Jan 2018 22:24:12 GMT</pubDate>
+    <pubDate>Sun, 04 Feb 2018 18:56:26 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>Blackboxing Scripts In Chrome DevTools</title>
+      <link>https://lukeb.co.uk/2018/02/05/Blackboxing-Scripts-In-Chrome-DevTools/</link>
+      <guid>https://lukeb.co.uk/2018/02/05/Blackboxing-Scripts-In-Chrome-DevTools/</guid>
+      <pubDate>Mon, 05 Feb 2018 10:00:00 GMT</pubDate>
+      <description>
+      
+        &lt;p&gt;Chrome DevTools has a feature called blackboxing which allows you to ignore certain scripts when debugging. When a script is blackboxed, it’s hidden from the call stack pane and you don’t step into it when stepping through the code. This is really useful when debugging code that uses frameworks or libraries such as Ember, React or jQuery.&lt;/p&gt;
+      
+      </description>
+      
+      <comments>https://lukeb.co.uk/2018/02/05/Blackboxing-Scripts-In-Chrome-DevTools/#disqus_thread</comments>
+    </item>
     
     <item>
       <title>Learning About Burnout By Crashing My Car</title>
