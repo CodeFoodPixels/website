@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            
+                Blackboxing Scripts In Chrome DevTools -
+            
+            Luke Bonaccorsi
+        </title>
+        <link rel="stylesheet" href="/css/styles.css" />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta charset="UTF-8">
+        <meta name="description" content="Chrome DevTools has a feature called blackboxing which allows you to ignore certain scripts when debugging. When a script is blackboxed, it’s hidden from the call stack pane and you don’t step into it">
+<meta name="keywords" content="devtools,tips">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Blackboxing Scripts In Chrome DevTools">
+<meta property="og:url" content="https://lukeb.co.uk/2018/02/05/Blackboxing-Scripts-In-Chrome-DevTools/index.html">
+<meta property="og:site_name" content="Luke Bonaccorsi">
+<meta property="og:description" content="Chrome DevTools has a feature called blackboxing which allows you to ignore certain scripts when debugging. When a script is blackboxed, it’s hidden from the call stack pane and you don’t step into it">
+<meta property="og:image" content="https://lukeb.co.uk/2018/02/05/Blackboxing-Scripts-In-Chrome-DevTools/settings.png">
+<meta property="og:image" content="https://lukeb.co.uk/2018/02/05/Blackboxing-Scripts-In-Chrome-DevTools/editor-pane.png">
+<meta property="og:image" content="https://lukeb.co.uk/2018/02/05/Blackboxing-Scripts-In-Chrome-DevTools/call-stack-pane.png">
+<meta property="og:updated_time" content="2018-02-04T18:56:26.353Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Blackboxing Scripts In Chrome DevTools">
+<meta name="twitter:description" content="Chrome DevTools has a feature called blackboxing which allows you to ignore certain scripts when debugging. When a script is blackboxed, it’s hidden from the call stack pane and you don’t step into it">
+<meta name="twitter:image" content="https://lukeb.co.uk/2018/02/05/Blackboxing-Scripts-In-Chrome-DevTools/settings.png">
+<meta name="twitter:creator" content="@LukeB_UK">
+        <link rel="alternate" type="application/rss+xml" title="RSS Feed for lukeb.co.uk" href="/rss.xml" />
+    </head>
+
+    <body>
+        <header class="header">
+            <div class="header__spaceship">
+                <a href="/">
+                    <img src="/img/spaceship.png" alt="spaceship, spaceship, SPACESHIP!" class="header__spaceship-image" />
+                </a>
+            </div>
+            <div class="header__text">
+                <a href="/" class="header__name">Luke Bonaccorsi</a>
+                <div class="header__start js-start">Press Start</div>
+            </div>
+        </header>
+        <nav class="nav">
+            <div class="nav__content">
+                <input type="checkbox" id="show-menu" class="nav__toggle-checkbox" role="button">
+                <label for="show-menu" class="nav__item nav__toggle">Menu</label>
+                <a href="/" class="nav__item">Blog</a>
+                <a href="/about" class="nav__item">About</a>
+                <a href="/projects" class="nav__item">Projects</a>
+                <a href="https://github.com/lukeb-uk" class="nav__item">GitHub</a>
+                <a href="https://twitter.com/LukeB_UK" class="nav__item">Twitter</a>
+                <a href="/rss.xml" class="nav__item">RSS</a>
+            </div>
+        </nav>
+        <main class="content">
+            <article class="content__article">
+    <header class="content__header">
+        <h1>
+            
+                Blackboxing Scripts In Chrome DevTools
+            
+        </h1>
+        <div class="content__meta">
+            <time datetime="2018-02-05T10:00:00.000Z">2018-02-05</time>
+        </div>
+    </header>
+    
+        <p>Chrome DevTools has a feature called blackboxing which allows you to ignore certain scripts when debugging. When a script is blackboxed, it’s hidden from the call stack pane and you don’t step into it when stepping through the code. This is really useful when debugging code that uses frameworks or libraries such as Ember, React or jQuery.</p>
+<a id="more"></a>
+<p>There are a few ways to blackbox a script:</p>
+<h2 id="Blackboxing-in-settings"><a href="#Blackboxing-in-settings" class="headerlink" title="Blackboxing in settings"></a>Blackboxing in settings</h2><p><img src="settings.png" alt="The blackboxing tab in the settings section of Chrome DevTools"></p>
+<ol>
+<li><p>In the settings section, go to the “Blackboxing” tab</p>
+</li>
+<li><p>Click “Add pattern…”</p>
+</li>
+<li><p>In the text box, enter either a script name or a regex pattern that will match scripts that you want to blackbox.</p>
+</li>
+<li><p>Click add</p>
+</li>
+</ol>
+<h2 id="Blackboxing-in-the-editor-pane-of-the-sources-section"><a href="#Blackboxing-in-the-editor-pane-of-the-sources-section" class="headerlink" title="Blackboxing in the editor pane of the sources section"></a>Blackboxing in the editor pane of the sources section</h2><p><img src="editor-pane.png" alt="The blackboxing item in the editor pane context menu"></p>
+<ol>
+<li><p>In the sources section, open the file you want to blackbox</p>
+</li>
+<li><p>Right click in the editor pane</p>
+</li>
+<li><p>Select “Blackbox script”</p>
+</li>
+</ol>
+<h2 id="Blackboxing-in-the-call-stack-pane-of-the-sources-section"><a href="#Blackboxing-in-the-call-stack-pane-of-the-sources-section" class="headerlink" title="Blackboxing in the call stack pane of the sources section"></a>Blackboxing in the call stack pane of the sources section</h2><p><img src="call-stack-pane.png" alt="The blackboxing item in the call stack pane context menu"></p>
+<ol>
+<li><p>When paused on a breakpoint, go to the sources section</p>
+</li>
+<li><p>In the call stack pane, right click on a function from the file you want to blackbox</p>
+</li>
+<li><p>Select “Blackbox script”</p>
+</li>
+</ol>
+
+    
+    <footer>
+        
+            <a class="tag-link" href="/tags/devtools/">#devtools</a>, <a class="tag-link" href="/tags/tips/">#tips</a>
+        
+    </footer>
+</article>
+
+
+        </main>
+        <footer class="footer">&copy; Luke Bonaccorsi 2017</footer>
+        <script async type="text/javascript" src="/js/easter.js"></script>
+    </body>
+</html>
