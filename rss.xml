@@ -8,8 +8,22 @@
     <atom:link href="/rss.xml" rel="self" type="application/rss+xml"/>
     
     <description></description>
-    <pubDate>Tue, 24 Apr 2018 15:00:20 GMT</pubDate>
+    <pubDate>Fri, 27 Apr 2018 09:13:33 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>Community Group Giveaways</title>
+      <link>https://lukeb.co.uk/2018/04/27/Community-Group-Giveaways/</link>
+      <guid>https://lukeb.co.uk/2018/04/27/Community-Group-Giveaways/</guid>
+      <pubDate>Fri, 27 Apr 2018 10:30:00 GMT</pubDate>
+      <description>
+      
+        &lt;p&gt;At LeedsJS we’ve been lucky enough to have sponsors willing to offer up prizes for us to give away to our attendees. We’ve tried a couple of ways to give them away and I thought I’d write up a post to discuss them.&lt;/p&gt;
+      
+      </description>
+      
+      <comments>https://lukeb.co.uk/2018/04/27/Community-Group-Giveaways/#disqus_thread</comments>
+    </item>
     
     <item>
       <title>TIL: document.querySelectorAll returns a NodeList</title>
