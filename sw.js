@@ -16,8 +16,8 @@
                 cache.addAll([
                     '/js/easter.js',
                     '/img/asteroid.png',
-                    '/about',
-                    '/projects'
+                    '/about/',
+                    '/projects/'
                 ]);
 
                 return cache.addAll([
@@ -26,7 +26,7 @@
                     '/img/spaceship.png',
                     '/img/stars.png',
                     '/',
-                    '/offline'
+                    '/offline/'
                 ]);
             });
     };
@@ -59,7 +59,7 @@
             event.respondWith(
                 fetch(request)
                 .catch(() => {
-                    return caches.match('/offline');
+                    return caches.match('/offline/');
                 })
             );
             return;
@@ -91,7 +91,7 @@
                 .catch(() => {
                     return caches.match(request)
                         .then((response) => {
-                            return response || caches.match('/offline');
+                            return response || caches.match('/offline/');
                         })
                 })
             );
