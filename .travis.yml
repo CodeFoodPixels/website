@@ -4,10 +4,15 @@ branches:
   only:
   - master
 before_script:
+  - IFS=' '
+  - data="{\"files\":["
+  - files=$(git diff-tree --no-commit-id --name-only -r --root $(git rev-list --no-merges -n 1 HEAD))
+  - while read line; do data="${data}\"https://lukeb.co.uk/$line\","; done <<< $files
+  - data="${data::-1}]}"
   - >
-    curl -X DELETE \
+    curl -X POST \
          -H "X-Auth-Email: $CLOUDFLARE_EMAIL" \
          -H "X-Auth-Key: $CLOUDFLARE_TOKEN" \
          -H "Content-Type: application/json" \
-         --data '{"purge_everything":true}' \
+         --data ${data} \
          https://api.cloudflare.com/client/v4/zones/$CLOUDFLARE_ZONE/purge_cache
