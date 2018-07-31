@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en-GB">
     <head>
         <title>
             
@@ -7,7 +7,7 @@
             
             Luke Bonaccorsi
         </title>
-        <link rel="stylesheet" href="/css/styles.css" />
+        <link rel="stylesheet" href="/css/styles.css">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta charset="UTF-8">
         <meta name="description" content="While GitHub pages supports HTTPS for sites using the github.io domain, it doesn’t support it for custom domains. I’ve had a few people ask how I’ve achieved HTTPS with a custom domain on GitHub pages">
@@ -17,6 +17,7 @@
 <meta property="og:url" content="https://lukeb.co.uk/2018/01/02/HTTPS-With-A-Custom-Domain-On-GitHub-Pages/index.html">
 <meta property="og:site_name" content="Luke Bonaccorsi">
 <meta property="og:description" content="While GitHub pages supports HTTPS for sites using the github.io domain, it doesn’t support it for custom domains. I’ve had a few people ask how I’ve achieved HTTPS with a custom domain on GitHub pages">
+<meta property="og:locale" content="default">
 <meta property="og:updated_time" content="2018-04-27T09:13:33.929Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="HTTPS With A Custom Domain On GitHub Pages">
@@ -31,14 +32,14 @@
         <meta name="application-name" content="Luke Bonaccorsi">
         <meta name="msapplication-TileColor" content="#000000">
         <meta name="theme-color" content="#000000">
-        <link rel="alternate" type="application/rss+xml" title="RSS Feed for lukeb.co.uk" href="/rss.xml" />
+        <link rel="alternate" type="application/rss+xml" title="RSS Feed for lukeb.co.uk" href="/rss.xml">
     </head>
 
     <body>
         <header class="header">
             <div class="header__spaceship">
                 <a href="/">
-                    <img src="/img/spaceship.png" alt="spaceship, spaceship, SPACESHIP!" class="header__spaceship-image" />
+                    <img src="/img/spaceship.png" alt="spaceship, spaceship, SPACESHIP!" class="header__spaceship-image">
                 </a>
             </div>
             <div class="header__text">
@@ -53,8 +54,8 @@
                 <a href="/" class="nav__item">Blog</a>
                 <a href="/about/" class="nav__item">About</a>
                 <a href="/projects/" class="nav__item">Projects</a>
-                <a href="https://github.com/lukeb-uk" class="nav__item" target="_blank" rel="external">GitHub</a>
-                <a href="https://twitter.com/LukeB_UK" class="nav__item" target="_blank" rel="external">Twitter</a>
+                <a href="https://github.com/lukeb-uk" class="nav__item" target="_blank" rel="external nofollow noopener noreferrer">GitHub</a>
+                <a href="https://twitter.com/LukeB_UK" class="nav__item" target="_blank" rel="external nofollow noopener noreferrer">Twitter</a>
                 <a href="/rss.xml" class="nav__item">RSS</a>
             </div>
         </nav>
@@ -93,7 +94,7 @@
 </li>
 </ol>
 <p><strong>Note:</strong> The “Enforce HTTPS” box gets disabled when you add a custom domain. This is fine as we’ll be enforcing HTTPS in the next section.</p>
-<h2 id="Adding-HTTPS-with-Cloudflare"><a href="#Adding-HTTPS-with-Cloudflare" class="headerlink" title="Adding HTTPS with Cloudflare"></a>Adding HTTPS with Cloudflare</h2><p>To add HTTPS to our GitHub pages custom domain we’ll be using the free tier of <a href="https://www.cloudflare.com" target="_blank" rel="external">Cloudfare</a>.</p>
+<h2 id="Adding-HTTPS-with-Cloudflare"><a href="#Adding-HTTPS-with-Cloudflare" class="headerlink" title="Adding HTTPS with Cloudflare"></a>Adding HTTPS with Cloudflare</h2><p>To add HTTPS to our GitHub pages custom domain we’ll be using the free tier of <a href="https://www.cloudflare.com" target="_blank" rel="external nofollow noopener noreferrer">Cloudfare</a>.</p>
 <h3 id="Adding-The-DNS-Records"><a href="#Adding-The-DNS-Records" class="headerlink" title="Adding The DNS Records"></a>Adding The DNS Records</h3><p>During the process of adding your site, you’ll be shown a list of DNS records for your domain. Alternatively you can go to the “DNS” section of the dashboard.</p>
 <p>You need to add <code>CNAME</code> record for <code>www</code> that redirects to your GitHub pages URL. For me that means I have it set to <code>lukeb-uk.github.io</code>. Make sure that the traffic is set to go through Cloudflare with the orange cloud.</p>
 <p>You could also add your root domain instead of <code>www</code> and this would mean it redirects to GitHub pages when you hit the root domain. This is how I have it set up.</p>
@@ -117,7 +118,7 @@
         <footer class="footer">
             <p>&copy; Luke Bonaccorsi 2017 - 2018</p>
             <p>
-                <a href="https://github.com/lukeb-uk/website-hexo" target="_blank" rel="external">
+                <a href="https://github.com/lukeb-uk/website-hexo" target="_blank" rel="external nofollow noopener noreferrer">
                     View website source on GitHub
                 </a>
             </p>

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en-GB">
     <head>
         <title>
             
@@ -7,7 +7,7 @@
             
             Luke Bonaccorsi
         </title>
-        <link rel="stylesheet" href="/css/styles.css" />
+        <link rel="stylesheet" href="/css/styles.css">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta charset="UTF-8">
         <meta name="description" content="My previous site hadn’t been touched since late 2014 and was running using a custom PHP system I’d written that took markdown and produced the page. This was happening every time someone hit the page">
@@ -16,6 +16,7 @@
 <meta property="og:url" content="https://lukeb.co.uk/2017/11/12/New-Website/index.html">
 <meta property="og:site_name" content="Luke Bonaccorsi">
 <meta property="og:description" content="My previous site hadn’t been touched since late 2014 and was running using a custom PHP system I’d written that took markdown and produced the page. This was happening every time someone hit the page">
+<meta property="og:locale" content="default">
 <meta property="og:updated_time" content="2018-04-27T09:13:33.929Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="New Website!">
@@ -30,14 +31,14 @@
         <meta name="application-name" content="Luke Bonaccorsi">
         <meta name="msapplication-TileColor" content="#000000">
         <meta name="theme-color" content="#000000">
-        <link rel="alternate" type="application/rss+xml" title="RSS Feed for lukeb.co.uk" href="/rss.xml" />
+        <link rel="alternate" type="application/rss+xml" title="RSS Feed for lukeb.co.uk" href="/rss.xml">
     </head>
 
     <body>
         <header class="header">
             <div class="header__spaceship">
                 <a href="/">
-                    <img src="/img/spaceship.png" alt="spaceship, spaceship, SPACESHIP!" class="header__spaceship-image" />
+                    <img src="/img/spaceship.png" alt="spaceship, spaceship, SPACESHIP!" class="header__spaceship-image">
                 </a>
             </div>
             <div class="header__text">
@@ -52,8 +53,8 @@
                 <a href="/" class="nav__item">Blog</a>
                 <a href="/about/" class="nav__item">About</a>
                 <a href="/projects/" class="nav__item">Projects</a>
-                <a href="https://github.com/lukeb-uk" class="nav__item" target="_blank" rel="external">GitHub</a>
-                <a href="https://twitter.com/LukeB_UK" class="nav__item" target="_blank" rel="external">Twitter</a>
+                <a href="https://github.com/lukeb-uk" class="nav__item" target="_blank" rel="external nofollow noopener noreferrer">GitHub</a>
+                <a href="https://twitter.com/LukeB_UK" class="nav__item" target="_blank" rel="external nofollow noopener noreferrer">Twitter</a>
                 <a href="/rss.xml" class="nav__item">RSS</a>
             </div>
         </nav>
@@ -73,12 +74,12 @@
         <p>My previous site hadn’t been touched since late 2014 and was running using a custom PHP system I’d written that took markdown and produced the page. This was happening every time someone hit the page so was pretty inefficient.</p>
 <p>As my focus is no longer on PHP, I wanted to move towards something JavaScript based. I didn’t want to use a client side framework to do this, as the content is pretty static and I feel it would be needless to require JavaScript to present static content.</p>
 <a id="more"></a>
-<h2 id="Static-Site-Generator"><a href="#Static-Site-Generator" class="headerlink" title="Static Site Generator"></a>Static Site Generator</h2><p>I had a look around and chose <a href="https://hexo.io/" target="_blank" rel="external">Hexo</a> as a static site generator. Because this just outputs HTML files, I am using GitHub Pages to host it. The site consists of 2 repos:</p>
+<h2 id="Static-Site-Generator"><a href="#Static-Site-Generator" class="headerlink" title="Static Site Generator"></a>Static Site Generator</h2><p>I had a look around and chose <a href="https://hexo.io/" target="_blank" rel="external nofollow noopener noreferrer">Hexo</a> as a static site generator. Because this just outputs HTML files, I am using GitHub Pages to host it. The site consists of 2 repos:</p>
 <ul>
-<li>The first is the <a href="https://github.com/lukeb-uk/website-hexo" target="_blank" rel="external">website-hexo</a> repo. This contains the Hexo project that the site is generated from. The raw markdown files and EJS templates live in here.</li>
-<li>The second is the <a href="https://github.com/lukeb-uk/website" target="_blank" rel="external">website</a> repo. This is where the generated site is pushed to and is then served using GitHub Pages.</li>
+<li>The first is the <a href="https://github.com/lukeb-uk/website-hexo" target="_blank" rel="external nofollow noopener noreferrer">website-hexo</a> repo. This contains the Hexo project that the site is generated from. The raw markdown files and EJS templates live in here.</li>
+<li>The second is the <a href="https://github.com/lukeb-uk/website" target="_blank" rel="external nofollow noopener noreferrer">website</a> repo. This is where the generated site is pushed to and is then served using GitHub Pages.</li>
 </ul>
-<h2 id="Automated-Builds"><a href="#Automated-Builds" class="headerlink" title="Automated Builds"></a>Automated Builds</h2><p>I have automated the build process using Travis CI. Any time I push a commit up to the website-hexo repo, the site is generated and pushed to a new branch on the website repo. A pull request is made and a preview is pushed up to ZEIT’s <a href="https://zeit.co/now" target="_blank" rel="external">Now</a>. The code for all this can be found in the <a href="https://github.com/lukeb-uk/website-hexo/blob/master/.travis.yml" target="_blank" rel="external">Travis config file</a> in the website-hexo repo.</p>
+<h2 id="Automated-Builds"><a href="#Automated-Builds" class="headerlink" title="Automated Builds"></a>Automated Builds</h2><p>I have automated the build process using Travis CI. Any time I push a commit up to the website-hexo repo, the site is generated and pushed to a new branch on the website repo. A pull request is made and a preview is pushed up to ZEIT’s <a href="https://zeit.co/now" target="_blank" rel="external nofollow noopener noreferrer">Now</a>. The code for all this can be found in the <a href="https://github.com/lukeb-uk/website-hexo/blob/master/.travis.yml" target="_blank" rel="external nofollow noopener noreferrer">Travis config file</a> in the website-hexo repo.</p>
 <h2 id="Design-And-Implementation"><a href="#Design-And-Implementation" class="headerlink" title="Design And Implementation"></a>Design And Implementation</h2><p>For the actual website, I wanted to use pixel art in the design. I really enjoy creating pixel art and love the style visually. I looked at some retro games for UI inspiration and put together a design that I’m pretty happy with.</p>
 <p>A lot of the actual layout is achieved with flexbox. I love how powerful flexbox is and what you can achieve with it. Although it does sort of remind me of the table layouts that were popular when I started developing.</p>
 <p>I took the opportunity to add a little animation using CSS, as it’s not something I’ve done much and wanted to try more. I feel it’s worked well!</p>
@@ -95,7 +96,7 @@
         <footer class="footer">
             <p>&copy; Luke Bonaccorsi 2017 - 2018</p>
             <p>
-                <a href="https://github.com/lukeb-uk/website-hexo" target="_blank" rel="external">
+                <a href="https://github.com/lukeb-uk/website-hexo" target="_blank" rel="external nofollow noopener noreferrer">
                     View website source on GitHub
                 </a>
             </p>
